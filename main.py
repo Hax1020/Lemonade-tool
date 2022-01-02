@@ -62,6 +62,9 @@ if protocol == "tcp" or "TCP":
 
 elif protocol == "udp" or "UDP":
   s = socket(AF_INET, SOCK_DGRAM)
+  
+else:
+  print("undefined protocol!, Ctrl + C to close!")
 
 os.system("clear")
 #ip = input("Target IP: ")
