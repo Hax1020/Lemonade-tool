@@ -13,7 +13,7 @@ so what can we do right now?
 
 the answer is easy using multiple ip or devices to raiding a server or ip!
 let me show you
-![DDoS attack article](https://i.ibb.co/V97T3Lc/E8-E3-CD06-7147-4-A28-B48-F-F0-C4-FFFDA2-C4.jpg)
+![2818C296-4601-4114-9E3A-C9EB91750FE0](https://user-images.githubusercontent.com/93829550/147926208-355acbd5-bf84-4fd3-a78e-6e6a9fad963b.jpeg)
 as you see you can hide yourslef between many other ip raiding a server at the same time also attack will be powerful and faster!
 
 also they will not be able to find this attack's master mind quike! but they will find you but hard!
