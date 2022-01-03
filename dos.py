@@ -58,7 +58,7 @@ def main():
                                                           V
       """)
 
-  parser = argparse.ArgumentParser()
+  parser = argparse.ArgumentParser(description = "Lemonade is a simple hacking console with cool features for begginer hackers!")
 
   parser.add_argument('--TARGET', '--T', type = str, help = 'Target IP', required = True)
   parser.add_argument('--PORT', '--P', type = int, default = '80', help = 'Port', required = True)
