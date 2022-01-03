@@ -50,9 +50,9 @@ print("""
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument('--target', '--t', type = str, help = 'Target IP', required = True)
-parser.add_argument('--port', '--p', type = int, default = '80', help = 'Port', required = True)
-parser.add_argument('--protocol', '--p', type = str, default = 'UDP', help = 'Transport protocol', choices = ['UDP', 'TCP'], required = True)
+parser.add_argument('--TARGET', '--T', type = str, help = 'Target IP', required = True)
+parser.add_argument('--PORT', '--P', type = int, default = '80', help = 'Port', required = True)
+parser.add_argument('--protocol', '--p', type = str, default = 'UDP', help = 'Transport protocol', choices = ['UDP', 'TCP'])
 
 arguments = parser.parse_args()
 
