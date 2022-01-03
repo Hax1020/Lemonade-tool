@@ -6,5 +6,3 @@ in this project i made a simple code for DoS attack by sending too many pockets 
 
 > attention this project is for eduction only and don't ever use it on some stranger's website or ip for sure!
 keep yourselves safe my dears!
-
-![5492EB34-EECA-4A92-89F0-62BEA752EAE6](https://user-images.githubusercontent.com/93829550/147924875-78825889-76a4-4974-8ae2-07f1c08046f4.jpeg)
