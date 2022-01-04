@@ -53,5 +53,5 @@ def main():
   server.server_close()
   print("Server stopped!")
  
-if name == "__main__":
+if __name__ == "__main__":
  main()
