@@ -1,7 +1,7 @@
 if you are a hacker or a noob hacker or a beginner ,you heard DoS and DDoS attack for sure!
 if you don't know what is DoS and DDoS i'm here to explain you my friends!
 
-## Dos:
+# Dos:
 DoS means sending big and usless pockets to a server until server couldn't processing the datas sent from users and finally carshing it
 ![5492EB34-EECA-4A92-89F0-62BEA752EAE6](https://user-images.githubusercontent.com/93829550/147924875-78825889-76a4-4974-8ae2-07f1c08046f4.jpeg)
 congratulation! you just terminated a server by sending too many datas!
