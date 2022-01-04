@@ -24,7 +24,7 @@ print("""
                                                           V
       """)
 
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(description = "Lemonade is a simple hacking console with cool features for begginer hackers! made by pastlecry#8645")
 
 parser.add_argument('--PORT', '--P', type = int, help = 'Server Port', default = 9999)
 parser.add_argument('--HOST', '--H', type = str, help = 'Server ip address', default = '')
