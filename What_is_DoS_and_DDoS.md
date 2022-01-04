@@ -6,7 +6,7 @@ DoS means sending big and usless pockets to a server until server couldn't proce
 ![5492EB34-EECA-4A92-89F0-62BEA752EAE6](https://user-images.githubusercontent.com/93829550/147924875-78825889-76a4-4974-8ae2-07f1c08046f4.jpeg)
 congratulation! you just terminated a server by sending too many datas!
 
-##DDoS:
+# DDoS:
 but there is a problem!
 because they know who raided their servers and they will find you and they will block your ip and will get you by police!
 so what can we do right now?
@@ -20,8 +20,8 @@ also they will not be able to find this attack's master mind quike! but they wil
 ![DDoS attack article](https://i.ibb.co/V97T3Lc/E8-E3-CD06-7147-4-A28-B48-F-F0-C4-FFFDA2-C4.jpg)
 
 
-> ATTENTION!
-all of this information is for eduction only! do not try or use it on someone stranger's server or ip!
+# ATTENTION!
+> all of this information is for eduction only! do not try or use it on someone stranger's server or ip!
 if you want to try it, try it on your own server or website if you don't know how to do this and don't want to make a website you can make a website easily by tutorials in internet!
 
 i hope you liked today's lesson!
