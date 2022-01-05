@@ -42,12 +42,12 @@ class Server(BaseHTTPRequestHandler):
     self.end_headers()
   
     self.wfile.write(bytes("<html><body><h1>SERVER IS RUNNING!<h1><body><html>", "utf-8"))
-    print(f"ip: {self.client_address[0]}")
+    ip = self.client_address[0]
 
 def main():
   server = HTTPServer((host, port), Server)
   print(f"Server is running...")
-  print(f"port: {port}")
+  print(f"ip: {ip}\nport: {port}")
   server.serve_forever()
   server.server_close()
   print("Server stopped!")
