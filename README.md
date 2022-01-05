@@ -7,6 +7,11 @@ in this project i made a simple code for DoS attack by sending too many pockets 
 
 # WEB Server Console:
 
+![F3EAB1AA-D8A6-463E-944F-9CA34AB07B8A](https://user-images.githubusercontent.com/93829550/148190134-5cb77ebe-5cc8-417e-a9fd-c69e3b5ca194.jpeg)
+![09C3212C-57DD-4E47-BACA-5E267D4806F8](https://user-images.githubusercontent.com/93829550/148190141-fc945f29-3e3f-48eb-a683-ab5b088ba34b.jpeg)
+![Uploading 0E34CAA0-33D8-46ED-B411-0A45C7255087.jpeg…]()
+
+
 > DDoS attack and console features soon!
 > simp on Lemonade1S and Julia or you're gay! lol
 
