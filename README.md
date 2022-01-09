@@ -16,7 +16,7 @@ in this project i made a simple code for DoS attack by sending too many pockets 
 > simp on Lemonade1S and Julia or you're gay! lol
 
 # attention!
-this project is for eduction only and don't ever use it on some stranger's website or ip for sure!
+this project is for education only and don't ever use it on some stranger's website or ip for sure!
 keep yourselves safe my dears!
 
 [discord]: https://discord.gg/2nsbNDxPUq
