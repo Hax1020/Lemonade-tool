@@ -61,8 +61,8 @@ def main():
   #port = input("Port: ")
   #protocol = input("protocol(UDP/TCP): ")
 
-  ip = arguments.target
-  port = arguments.port
+  ip = arguments.TARGET
+  port = arguments.PORT
   protocol = arguments.protocol
 
   bytes = random._urandom(1490)
