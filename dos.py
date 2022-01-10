@@ -71,10 +71,10 @@ def main():
 
 
 
-  if protocol == "tcp" or "TCP": 
+  if protocol == "TCP": 
     s = socket(AF_INET, SOCK_STREAM)
 
-  elif protocol == "udp" or "UDP":
+  elif protocol == "UDP":
     s = socket(AF_INET, SOCK_DGRAM)
   
   else:
@@ -88,8 +88,6 @@ def main():
     #sleep_time = 2 
 
   while True:
-    #ifndto(bytes, (ip, int(port)))
-    #s.connect((ip, int(port)))
     s.connect((ip, port))
     s.send(bytes)
     pocket = pocket + 1
