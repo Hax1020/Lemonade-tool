@@ -62,7 +62,7 @@ def main():
   ip = arguments.TARGET
   port = arguments.PORT
   protocol = arguments.protocol
-  fale_ip = argument.FAKEIP
+  fale_ip = arguments.FAKEIP
 
   bytes = random._urandom(1490)
   pocket = 0
