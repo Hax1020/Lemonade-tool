@@ -52,7 +52,7 @@ def main():
 
   parser = argparse.ArgumentParser(description = "Lemonade is a simple hacking console with cool features for begginer hackers! made by pastlecry#8645")
 
-  parser.add_argument('--TARGET', '--T', type = str, help = 'Target IP', required = True)
+  parser.add_argument('--TARGET', '--T', type = int, help = 'Target IP', required = True)
   parser.add_argument('--PORT', '--P', type = int, default = '80', help = 'Port', required = True)
   parser.add_argument('--protocol', '--p', type = str, default = 'UDP', help = 'Transport protocol', choices = ['UDP', 'TCP'])
   parser.add_argument('--FAKEIP', '--F', type = int, default = '182.123.16.28', help = 'Fale IP')
