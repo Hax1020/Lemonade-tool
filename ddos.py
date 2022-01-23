@@ -71,10 +71,10 @@ def main():
 
 
   if protocol == "TCP": 
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s = socket(AF_INET, SOCK_STREAM)
 
   elif protocol == "UDP":
-    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    s = socket.socket(AF_INET, SOCK_DGRAM)
   
   else:
     print("undefined protocol!, Ctrl + C to close!")
@@ -98,7 +98,7 @@ def attack():
     if port == 65543:
       port = int(port) - 1
 
-    s.close()
+  s.close()
 
   for i in range(500):
     thread = threading.Thread(target = attack)
@@ -107,4 +107,3 @@ def attack():
       
 if __name__ == "__main__":
     main()
-    attack()
