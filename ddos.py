@@ -74,7 +74,7 @@ def main():
     s = socket(AF_INET, SOCK_STREAM)
 
   elif protocol == "UDP":
-    s = socket.socket(AF_INET, SOCK_DGRAM)
+    s = socket(AF_INET, SOCK_DGRAM)
   
   else:
     print("undefined protocol!, Ctrl + C to close!")
