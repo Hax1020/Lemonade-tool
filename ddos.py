@@ -99,6 +99,6 @@ def attack():
       
 if __name__ == "__main__":
   main()
-  for i in range(500):
+  for i in range(2):
     thread = threading.Thread(target = attack)
     thread.start()
