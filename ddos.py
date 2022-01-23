@@ -34,9 +34,9 @@ except ImportError:
 
 
 #def main():
-  #print("Simp on Lemonade1S#5327 and CNJ#0516 or you’re Gay! >_<")
-  #time.sleep(2)
-  #os.system("clear")
+print("Simp on Lemonade1S#5327 and CNJ#0516 or you’re Gay! >_<")
+time.sleep(1)
+os.system("clear")
 
 print("""
                                                               
