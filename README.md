@@ -7,7 +7,7 @@ in this project i made a simple code for DoS attack by sending too many pockets 
 
 # DDoS Console:
 
-![105BF241-8E70-4675-92A4-0B3E6B607733](https://user-images.githubusercontent.com/93829550/151249133-182c02be-8588-4fd2-b942-a9970287d47d.jpeg)
+![51E6DC86-F5BD-4821-AD31-E7CAC396B5F2](https://user-images.githubusercontent.com/93829550/151249120-3f6698c5-092a-4147-95c1-a3f574a00e2c.jpeg)
 
 # WEB Server Console:
 
