@@ -3,7 +3,6 @@ import os
 import sys
 import random
 import argparse
-from colorama import init, Fore, Back, Style
 
 using_datetime = True
 
@@ -22,6 +21,15 @@ try:
 except ImportError: 
   input(
       f"Module threading not installed, to install run '{'py -3' if os.name == 'nt' else 'python3.8'} -m pip install threading.\npress enter to exit")
+  exit()
+  
+try:
+  import colorama
+  from colorama import init, Fore, Back, Style
+  
+except ImportError: 
+  input(
+      f"Module colorama not installed, to install run '{'py -3' if os.name == 'nt' else 'python3.8'} -m pip install colorama.\npress enter to exit")
   exit()
   
 try:
