@@ -115,7 +115,7 @@ def main():
 
       except:
         print("connection faild!\npress ctrl/c to close or press Enter to process the attack!")
-        pass
+        return
 
       s.close() 
 
