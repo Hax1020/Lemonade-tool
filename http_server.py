@@ -1,7 +1,8 @@
 import os
 import time
 import argparse
-  
+from colorama import init, Fore, Back, Style
+
 try:
   from http.server import HTTPServer, BaseHTTPRequestHandler
   
@@ -26,7 +27,7 @@ print("""
 
 parser = argparse.ArgumentParser(description = "Lemonade is a simple hacking console with cool features for begginer hackers! made by pastlecry#8645")
 
-parser.add_argument('--PORT', '--P', type = int, help = 'Server Port', default = 9999)
+parser.add_argument('--PORT', '--P', type = int, help = 'Server Port', default = 8080)
 parser.add_argument('--HOST', '--H', type = str, help = 'Server ip address', default = '')
 
 arguments = parser.parse_args()
@@ -40,14 +41,20 @@ class Server(BaseHTTPRequestHandler):
     self.send_response(200)
     self.send_header("Content-type","text/html")
     self.end_headers()
-  
+    #ip = self.client_address[0]
     self.wfile.write(bytes("<html><body><h1>SERVER IS RUNNING!<h1><body><html>", "utf-8"))
-    ip = self.client_address[0]
 
 def main():
   server = HTTPServer((host, port), Server)
   print(f"Server is running...")
-  print(f"ip: {ip}\nport: {port}")
+  if arguments.HOST == '':
+      hosty = "127.0. 0.1"
+  else:
+      hosty = host
+  init(autoreset=True)
+  print("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░")
+  print(Style.BRIGHT + Fore.MAGENTA + " Host: " + Style.BRIGHT + Fore.WHITE + hosty + Style.BRIGHT + Fore.GREEN + "\n port: " + Style.BRIGHT + Fore.WHITE + str(port))
+  print("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░")
   server.serve_forever()
   server.server_close()
   print("Server stopped!")
