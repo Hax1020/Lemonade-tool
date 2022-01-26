@@ -2,6 +2,8 @@ hello my dear friends
 If you’re a beginner hacker or you want to learn hacking, you heard DoS and DDoS attack for sure!
 in this project i made a simple code for DoS attack by sending too many pockets to the Target ip and boom downing the server!
 
+![9D3F6F2A-623F-4A7A-B0CC-D5D7400B568C](https://user-images.githubusercontent.com/93829550/151249130-d84720b8-ea0e-4148-a8c0-613679776451.jpeg)
+
 # DoS Console:
 ![F42AE9F0-6B10-40BE-B879-A71FAA5735DA](https://user-images.githubusercontent.com/93829550/148069200-20e76a2a-be30-4087-a3e9-d292a1e9395e.jpeg)
 
