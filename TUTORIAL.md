@@ -1,15 +1,15 @@
-## TUTORIAL
+# TUTORIAL
 
 first of all this tool is for educational purposes  only!
 > i suggest you to don't use it on a stranger's website or servers and use it on your servers or server you got premission to attack.
-# clonning repo:
+## cloning repo:
 
 first thing you need to do is is cloning my tool!
 you can type 
 "git clone https://github.com/Pastlecry/Lemonade-Tool/"
 for it
 
-## How to attack:
+# How to attack:
 
 #DoS:
 first of all go to Lemonade Tool's dictionary by typing
